@@ -1,0 +1,142 @@
+.icon {
+    margin: 0 auto;
+    max-width: 45rem;
+    margin-top: 1rem;
+    padding: 1.25rem 2rem;
+    background: linear-gradient(to bottom right, #00707f, #0070b7);
+    height: fit-content;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    padding: 0.5rem;
+    width: 200px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+    margin-left: 150px;
+}
+
+.location {
+    color: white;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-out;
+    transform: scale(1.25);
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.search {
+    color: white;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-out;
+    transform: scale(1.25);
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .input {
+        width: 100%; /* Full width for small screens */
+        margin: 0.5rem 0; /* Adjust the margin for better spacing */
+    }
+}
+
+/* Additional styles for icons on hover (optional) */
+img:hover {
+    transform: scale(1.1); /* Scale the icon on hover (optional) */
+    cursor: pointer; /* Change the cursor to a pointer on hover (optional) */
+}
+.farhenhite {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.celcius {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.line {
+    font-size: 1.25rem;
+    margin: 0.25rem;
+}
+
+.date-time-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+#location{
+    color: white;
+    font-size: 50px;
+}
+
+#date {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.locationcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.location {
+    color: white;
+    background-color: #00707f;
+    font-size: 1.5rem;
+    font-weight: medium;
+    margin-right: 10px; 
+}
+.clearweatherimage {
+    width: 30px; /* Set the width to your desired size */
+    height: 30px; /* Set the height to your desired size */
+    border-radius: 50%; /* This will keep the icon circular */
+    margin-left: 80px;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .imagecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* This aligns content to the top of the container */
+    color: white;
+    justify-content: space-around;
+}
+.temp{
+justify-content: space-around;
+font-size: x-large;
+
+margin-bottom: 20%;
+
+}
+.realfellcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Use "gap" for spacing between flex items in a flex container */
+}
+
+.iconofrealfell {
+    display: flex;
+    font-weight: light; /* Use "font-weight" for font weight, not "font-light" */
+    font-size: 1rem; /* Use "font-size" for the font size */
+    align-items: center;
+    justify-content: center;
+}
+.imagerealfell{
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: white;
+}

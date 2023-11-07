@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,900&family=Roboto&display=swap' rel='stylesheet'>
+    <title>Weather App</title>
+   
+</head>
+<body>
+    <div class="icon">
+        <div style="display: flex; color: white; align-items: center; justify-content: center;font-size: medium; justify-content: space-around; cursor: pointer;">
+            <h3>Mumbai</h3>
+            <h3>Delhi</h3>
+            <h3>Bengaluru</h3>
+            <h3>Allahabad</h3>
+            <h3>Kerala</h3>
+        </div>
+     <div style="display: flex; gap: 25px;">
+        <input type="text" placeholder="search"class="input" style="font-size: 1.25rem; font-weight: lighter; padding: 0.5rem; width: 50%; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); text-transform: capitalize;">
+
+        
+        <div style="display: flex; gap: 15px; margin-top: 5px;">
+            <img src="https://cdn-icons-png.flaticon.com/128/10469/10469570.png" alt="" class="search">
+            <img src="https://image.shutterstock.com/image-vector/pin-point-logo-can-be-260nw-1679653036.jpg" alt="" class="location">
+        </div>
+
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <button name="metric" class="celcius" >°C</button>
+            <p class="line">|</p>
+            <button name="imperial" class="farhenhite">°F</button>
+        </div>
+     </div>
+
+
+     <div>
+        <div class="date-time-container">
+            <p id="date">
+            </p>
+        </div>
+            
+        <div class="locationcontainer" id="weather-container">
+            <p id="location">
+                Bengaluru
+            </p>
+        </div>
+    </div>
+    <div>
+        <div class="weather" style="display: flex; align-items: center; justify-content: center; padding-top: 1.5rem; font-size: 2rem; color: #00B5A7;">
+            <p style="margin-bottom: 70px;">Clear</p>
+        </div>
+    </div>
+
+    <div class="imagecontainer">
+        <img src="https://cdn-icons-png.flaticon.com/128/2698/2698213.png" alt="" class="clearweatherimage"> 
+        <span class="temp">34&deg;C</span>
+    <div class="realfellcontainer">
+        <div class="iconofrealfell">
+            <img src="https://cdn-icons-png.flaticon.com/512/6351/6351608.png" alt="" class="imagerealfell">
+Real fell:
+<span>32&deg;</span>
+</div>
+  <div>
+    <div class="iconofrealfell">
+        <img src="https://image.shutterstock.com/image-vector/drop-icon-liquid-humidity-isolated-260nw-2265152419.jpg" alt="" class="imagerealfell">
+    Humidity:
+    <span>65%</span>
+    </div>
+  </div>
+   <div>
+    <div class="iconofrealfell" style="margin-left: 25px;">
+        <img src="https://cdn-icons-png.flaticon.com/128/4113/4113142.png" alt="" class="imagerealfell">
+    Wind Speed:
+    <span>10km/h</span>
+    </div>
+   </div>
+
+        </div>
+
+    </div>
+    
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 1rem; color: white; font-size: 1rem; padding-top: 3rem;">
+
+        <img 
+        src="https://cdn-icons-png.flaticon.com/128/3313/3313896.png" 
+        alt="" 
+        style="height: 22px; width: 22px; background-color: white;"
+      
+      >
+        <p>Rise: <span style=" font-weight: medium;">05:35 AM</span></p>
+        <p class=" margin: 1rem;">|</p>
+        
+        <img src="https://cdn-icons-png.flaticon.com/128/6796/6796224.png" alt="" style="height: 22px; width: 22px; background-color: white;cursor: pointer">
+        <p style=" font-weight: lighter;">Set: <span style=" font-weight: medium;">07:00 PM</span></p>
+        <p class=" margin: 1rem;">|</p>
+        
+        <img src="https://cdn1.iconfinder.com/data/icons/airline-flight-booking-mobile-app/16/up-arrow-above-raise-high-512.png" alt="" style="height: 18px; width: 18px; background-color: white;">
+        <p style=" font-weight: lighter;">High: <span style=" font-weight: medium;">35&deg;</span></p>
+        <p class=" margin: 1rem;">|</p>
+
+        <img src="https://w7.pngwing.com/pngs/782/436/png-transparent-arrow-below-down-low-airline-flight-booking-mobile-app-icon.png" alt="" style="height: 18px; width: 18px; background-color: white;">
+        <p style=" font-weight: lighter;">Low: <span style=" font-weight: medium;">11&deg;</span></p>
+        
+    </div>
+    <div style="display: flex; align-items: center; justify-content: start; margin-top: 2rem;">
+        <p style="color: white; font-weight: medium; text-transform: uppercase; margin-left: 60px;">hourly forecast</p>
+    </div>
+    <hr style="margin-bottom: 5rem;">
+    
+
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; color: white;">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+            <p style="font-weight: light; font-size: 1em;">04:00 PM</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/2698/2698194.png" alt="" style="width: 3rem;">
+            <p style="font-weight: bold;">25.68&deg;</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+            <p style="font-weight: light; font-size: 1em;">05:00 PM</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/2698/2698213.png" alt="" style="width: 3rem;">
+            <p style="font-weight: bold;">30.53&deg;</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+            <p style="font-weight: light; font-size: 1em;">06:00 PM</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/1146/1146869.png" alt="" style="width: 3rem;">
+            <p style="font-weight: bold;">28.7&deg;</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+            <p style="font-weight: light; font-size: 1em;">07:00 PM</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/1163/1163657.png" alt="" style="width: 3rem;">
+            <p style="font-weight: bold;">35.39&deg;</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+            <p style="font-weight: light; font-size: 1em;">08:00 PM</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/1163/1163629.png" alt="" style="width: 3rem;">
+            <p style="font-weight: bold;">15.68&deg;</p>
+          </div>
+          
+</div>
+
+
+<div style="display: flex; align-items: center; justify-content: start; margin-top: 2rem;">
+    <p style="color: white; font-weight: medium; text-transform: uppercase; margin-left: 60px;">DAILY  forecast</p>
+</div>
+<hr style="margin-bottom: 5rem;">
+
+
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; color: white;">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+        <p style="font-weight: light; font-size: 1em;">SUN</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/1146/1146869.png" alt="" style="width: 3rem;">
+        <p style="font-weight: bold;">22&deg;</p>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+        <p style="font-weight: light; font-size: 1em;">MON</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/4064/4064276.png" alt="" style="width: 3rem;">
+        <p style="font-weight: bold;">35&deg;</p>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+        <p style="font-weight: light; font-size: 1em;">TUE</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/2698/2698213.png" alt="" style="width: 3rem;">
+        <p style="font-weight: bold;">30.4&deg;</p>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+        <p style="font-weight: light; font-size: 1em;">WED</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/1163/1163629.png" alt="" style="width: 3rem;">
+        <p style="font-weight: bold;">25.16&deg;</p>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: -10px;">
+        <p style="font-weight: light; font-size: 1em;">THUS</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/3445/3445722.png" alt="" style="width: 3rem;">
+        <p style="font-weight: bold;">12.14&deg;</p>
+      </div>
+</div>
+    </div>
+<script src="./style.js"></script>
+</body>
+</html>
